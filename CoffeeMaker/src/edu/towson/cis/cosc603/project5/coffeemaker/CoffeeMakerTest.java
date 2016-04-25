@@ -521,6 +521,11 @@ public class CoffeeMakerTest {
 		assertFalse(r8.equals(r7));
 	}
 	
+	@Test
+	public void testToStringRecipe(){
+		assertNotNull(r7.toString());
+	}
+	
 	//Inventory Test
 	
 	@Test
@@ -726,4 +731,8 @@ public class CoffeeMakerTest {
 		assertTrue(i2.enoughIngredients(r7));
 	}
 
+	@Test
+	public void testToStringInventory(){
+		assertNotNull(i2.toString());
+	}
 }
