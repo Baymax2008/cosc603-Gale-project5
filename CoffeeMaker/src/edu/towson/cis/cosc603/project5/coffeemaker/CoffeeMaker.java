@@ -5,13 +5,13 @@ package edu.towson.cis.cosc603.project5.coffeemaker;
  */
 public class CoffeeMaker {
 	/** Array of recipes in coffee maker */
-	private Recipe [] recipeArray;
+	final private Recipe [] recipeArray;
 	/** Number of recipes in coffee maker */
 	private final int NUM_RECIPES = 4;
 	/** Array describing if the array is full */
-	private boolean [] recipeFull;
+	final private boolean [] recipeFull;
 	/** Inventory of the coffee maker */
-    private Inventory inventory;
+	final private Inventory inventory;
 	
     /**
      * Constructor for the coffee maker
@@ -89,7 +89,8 @@ public class CoffeeMaker {
         if(r != null) {
 	        for(int i = 0; i < NUM_RECIPES; i++) {
 	            if(r.equals(recipeArray[i])) {
-	                recipeArray[i] = recipeArray[i]; 
+	            	//Removed next line because purpose wasn't found
+	                //recipeArray[i] = recipeArray[i]; 
 	                canDeleteRecipe = true;
 	            }
 	        }
