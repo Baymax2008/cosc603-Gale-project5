@@ -126,10 +126,10 @@ public class Inventory {
      */
     public String toString() {
     	final String newLine = System.getProperty("line.separator");
-    	return "Coffee: " + getCoffee() + newLine +
-			"Milk: " + getMilk() + newLine +
-			"Sugar: " + getSugar() + newLine +
-			"Chocolate: " + getChocolate() + newLine;
+    	return ("Coffee: " + getCoffee() + newLine +
+    			"Milk: " + getMilk() + newLine +
+    			"Sugar: " + getSugar() + newLine +
+    			"Chocolate: " + getChocolate() + newLine);
     	
     	
     }
